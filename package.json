@@ -1,0 +1,46 @@
+{
+  "name": "typescript-starter",
+  "version": "1.0.0",
+  "description": "TypeScript starter repository",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\" vitest.*.ts",
+    "lint": "eslint \"{src,test}/**/*.ts\" vitest.*.ts --fix",
+    "start": "node ./dist/index.js",
+    "start:dev": "nodemon ./src/index.ts",
+    "test": "vitest",
+    "test:cov": "vitest run --coverage",
+    "test:e2e": "vitest --config ./test/vitest-e2e.config.ts"
+  },
+  "keywords": [
+    "esm",
+    "starter",
+    "typescript",
+    "vitest"
+  ],
+  "author": "Christophe Geers",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.30",
+    "@types/supertest": "^6.0.2",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "@vitest/coverage-v8": "^1.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5",
+    "supertest": "^6.3.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^1.4.0"
+  }
+}
