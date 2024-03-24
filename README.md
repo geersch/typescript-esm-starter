@@ -12,20 +12,20 @@ $ yarn
 
 ```bash
 # development
-$ yarn run start:dev
+$ yarn start:dev
 ```
 
 ## Test
 
 ```bash
 # unit tests
-$ yarn run test
+$ yarn test
 
 # e2e tests
-$ yarn run test:e2e
+$ yarn test:e2e
 
 # test coverage
-$ yarn run test:cov
+$ yarn test:cov
 ```
 
 ## Linting
