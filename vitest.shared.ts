@@ -13,7 +13,14 @@ export const sharedVitestConfig = (): UserConfig => {
       sequence: {
         hooks: 'stack',
       },
-      reporters: 'basic',
+      'reporters': [
+        [
+          'default',
+          {
+            'summary': false,
+          },
+        ],
+      ],
       coverage: {
         include: ['src'],
         reporter: ['text', 'json', 'html'],
